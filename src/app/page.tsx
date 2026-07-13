@@ -22,18 +22,18 @@ export default function Page() {
             <div className="gap-2 flex flex-col order-2 md:order-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
+                className="text-3xl font-extrabold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                text={`hi, i'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                className="text-muted-foreground max-w-[600px] md:text-md lg:text-md"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
+              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-1 ring-muted">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -87,10 +87,10 @@ export default function Page() {
                       <img
                         src={education.logoUrl}
                         alt={education.school}
-                        className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+                        className="size-10 md:size-14 p-0.5 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
                       />
                     ) : (
-                      <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
+                      <div className="size-10 md:size-14 p-0.5 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
                     )}
                     <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                       <div className="font-semibold leading-none flex items-center gap-2">

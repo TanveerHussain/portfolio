@@ -4,13 +4,17 @@ import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
-import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
+import { Html5 } from "@/components/ui/svgs/html5";
+import { Css3 } from "@/components/ui/svgs/css3";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { Wordpress } from "@/components/ui/svgs/wordpress";
+import { Npm } from "@/components/ui/svgs/npm";
+import { Sitecore } from "@/components/ui/svgs/sitecore";
+import { Gsap } from "@/components/ui/svgs/gsap";
+import { ThreeJs } from "@/components/ui/svgs/threejs";
+import { Bootstrap } from "@/components/ui/svgs/bootstrap";
+import { TailwindCss } from "@/components/ui/svgs/tailwindcss";
+import { Figma } from "@/components/ui/svgs/figma";
 
 export const DATA = {
   name: "Tanveer Hussain",
@@ -19,22 +23,26 @@ export const DATA = {
   location: "United Arab Emirates, Dubai",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Former competitive boxer. I bring the same discipline to building digital products — show up, iterate, push until it's right.",
+    "I build modern web applications with React and JavaScript, focusing on performance, usability, and clean code. Outside of coding, I’m always exploring new tools and better ways to build products.",
   summary:
     "Frontend developer focused on turning complex requirements into fast, accessible interfaces at enterprise scale. I care about the details users never consciously notice — load times, interaction states, edge cases — and the architecture decisions that keep a codebase maintainable as it grows.",
   avatarUrl: "/me.png",
   skills: [
+    { name: "HTML5", icon: Html5 },
+    { name: "CSS3", icon: Css3 },
+    { name: "Javascript", icon: Javascript },
     { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
+    { name: "WordPress", icon: Wordpress },
+    { name: "NPM", icon: Npm },
+    { name: "Sitecore CMS", icon: Sitecore },
     { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
-    { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "GSAP", icon: Gsap },
+    { name: "Three.js", icon: ThreeJs },
+    { name: "Next.js", icon: NextjsIconDark },
+    { name: "Bootstrap", icon: Bootstrap },
+    { name: "Tailwind", icon: TailwindCss },
+    { name: "Figma", icon: Figma },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -46,14 +54,14 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/TanveerHussain/",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/tanveer-hussain-835b8790/",
         icon: Icons.linkedin,
 
         navbar: true,
