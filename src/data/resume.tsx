@@ -58,7 +58,7 @@ export const DATA = {
     { src: "/gallery/picture-7.jpg", alt: "photo-7.jpg" },
     { src: "/gallery/picture-8.jpg", alt: "photo-8.jpg" },
     { src: "/gallery/picture-9.jpg", alt: "photo-9.jpg" },
-  ],
+  ] as { src?: string; alt: string }[],
   contact: {
     email: "hello@example.com",
     tel: "+123456789",
