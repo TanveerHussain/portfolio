@@ -23,9 +23,9 @@ export const DATA = {
   location: "United Arab Emirates, Dubai",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "I build modern web applications with React and JavaScript, focusing on performance, usability, and clean code. Outside of coding, I’m always exploring new tools and better ways to build products.",
+    "I craft performant, user-friendly web applications using React and JavaScript. Always exploring new tools and better ways to build.",
   summary:
-    "Frontend developer focused on turning complex requirements into fast, accessible interfaces at enterprise scale. I care about the details users never consciously notice — load times, interaction states, edge cases — and the architecture decisions that keep a codebase maintainable as it grows.",
+    "Frontend developer focused on turning <u class='text-black dark:text-white'>complex requirements</u> into fast, accessible interfaces at <u class='text-black dark:text-white'> enterprise scale</u>. I care about the details users never consciously notice — <u class='text-black dark:text-white'>load times, interaction states, edge cases</u> — and the architecture decisions that keep a codebase maintainable as it <u class='text-black dark:text-white'> grows</u>.",
   avatarUrl: "/me.png",
   skills: [
     { name: "HTML5", icon: Html5 },
@@ -47,6 +47,17 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  ],
+  gallery: [
+    { src: "/gallery/picture-1.jpg", alt: "photo-1.jpg" },
+    { src: "/gallery/picture-2.jpg", alt: "photo-2.jpg" },
+    { src: "/gallery/picture-3.jpg", alt: "photo-3.jpg" },
+    { src: "/gallery/picture-4.jpg", alt: "photo-4.jpg" },
+    { src: "/gallery/picture-5.jpg", alt: "photo-5.jpg" },
+    { src: "/gallery/picture-6.jpg", alt: "photo-6.jpg" },
+    { src: "/gallery/picture-7.jpg", alt: "photo-7.jpg" },
+    { src: "/gallery/picture-8.jpg", alt: "photo-8.jpg" },
+    { src: "/gallery/picture-9.jpg", alt: "photo-9.jpg" },
   ],
   contact: {
     email: "hello@example.com",
@@ -95,7 +106,7 @@ export const DATA = {
       href: "https://www.emiratesnbd.com",
       badges: [],
       location: "Dubai, UAE",
-      title: "Frontend Developer / Software Engineer",
+      title: "Software Engineer",
       logoUrl: "/emiratesnbd.png",
       start: "June 2021",
       end: "Present",
