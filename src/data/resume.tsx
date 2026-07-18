@@ -60,7 +60,7 @@ export const DATA = {
     { src: "/gallery/picture-9.jpg", alt: "photo-9.jpg" },
   ] as { src?: string; alt: string }[],
   contact: {
-    email: "hello@example.com",
+    email: "tanveerh119@gmail.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -77,22 +77,9 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:tanveerh119@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -158,127 +145,124 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Chatbot",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "This is a conversational chatbot I built from scratch — complete with a floating widget, smooth message flow, and real-time response handling. I focused a lot on the small details here: typing indicators, message alignment, and a UI that feels friendly rather than robotic.",
       technologies: [
-        "Next.js",
+        "React",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Node.js",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/TanveerHussain/chatbot",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/projects/chatbot.png",
+      video:"",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Shophub",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Shophub is an e-commerce platform I built to practice the complete shopping flow — from browsing products to cart management and login/signup. I kept the UI minimal and clutter-free so the products stay in focus, and made sure it works smoothly across screen sizes.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "React",
+        "Auth",
+        "Bootstrap",
+        "eCommerce",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/TanveerHussain/shophub",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/projects/shophub.png",
+      video:"",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Digital Business Card",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "I built this digital business card as a modern alternative to paper cards — scan one QR to save the contact instantly, or scan the other to add it straight to your phone's wallet. Focused on a clean, premium card design with cross-platform support for both iOS and Android.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "JavaScript",
+        "Vercel",
+        "Apple Wallet",
+        "Google Wallet",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          type: "Source",
+          href: "https://github.com/TanveerHussain/wallet-app",
+          icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/projects/wallet-app.png",
+      video:"",
     },
+    {
+      title: "Gemini Clone",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "I rebuilt Google Gemini as a working AI assistant — from the pixel-accurate landing page to live chat responses powered by an AI API. Beyond matching the design, it handles real prompt submission, response streaming, and conversation flow just like the original.",
+      technologies: [
+        "React",
+        "Chat",
+        "Google Gemini",
+        "API",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/TanveerHussain/gemini-clone",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/gemini.png",
+      video:"",
+    },
+    {
+      title: "Expense Tracker",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "I built this expense tracker to handle the full flow of personal finance management — user signup and login, adding and managing income/expense records, and automatic calculation of totals and monthly breakdowns. The charts are generated from real user data, so insights update as transactions change",
+      technologies: [
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "Chart.js",
+        "MongoDB",
+        "Express.js",
+        "JWT",
+      ],
+      // links: [
+      //   {
+      //     type: "Source",
+      //     href: "https://github.com/TanveerHussain/gemini-clone",
+      //     icon: <Icons.github className="size-3" />,
+      //   },
+      // ],
+      image: "/projects/expense-tracker.png",
+      video:"",
+    }
   ],
   hackathons: [
     {
