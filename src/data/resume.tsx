@@ -136,7 +136,7 @@ export const DATA = {
     },
     {
       school: "Government Islamia Science College",
-      href: "",
+      href: "/",
       degree: "Higher Secondary School Certificate",
       logoUrl: "/islamia.png",
       start: "2011",
