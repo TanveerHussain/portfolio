@@ -29,7 +29,7 @@ export default function GallerySection() {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className={`w-full rounded-xl border border-border object-cover opacity-100 dark:opacity-25 hover:opacity-80 transition-opacity duration-300 ${aspect}`}
+                className={`w-full rounded-xl border border-border object-cover dark:opacity-50 md:dark:opacity-25 hover:opacity-80 transition-opacity duration-300 ${aspect}`}
               />
             ) : (
               <div
