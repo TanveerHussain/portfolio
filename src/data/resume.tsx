@@ -4,13 +4,17 @@ import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
-import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
+import { Html5 } from "@/components/ui/svgs/html5";
+import { Css3 } from "@/components/ui/svgs/css3";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { Wordpress } from "@/components/ui/svgs/wordpress";
+import { Npm } from "@/components/ui/svgs/npm";
+import { Sitecore } from "@/components/ui/svgs/sitecore";
+import { Gsap } from "@/components/ui/svgs/gsap";
+import { ThreeJs } from "@/components/ui/svgs/threejs";
+import { Bootstrap } from "@/components/ui/svgs/bootstrap";
+import { TailwindCss } from "@/components/ui/svgs/tailwindcss";
+import { Figma } from "@/components/ui/svgs/figma";
 
 export const DATA = {
   name: "Tanveer Hussain",
@@ -19,61 +23,63 @@ export const DATA = {
   location: "United Arab Emirates, Dubai",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Former competitive boxer. I bring the same discipline to building digital products — show up, iterate, push until it's right.",
+    "I craft performant, user-friendly web applications using React and JavaScript. Always exploring new tools and better ways to build.",
   summary:
-    "Frontend developer focused on turning complex requirements into fast, accessible interfaces at enterprise scale. I care about the details users never consciously notice — load times, interaction states, edge cases — and the architecture decisions that keep a codebase maintainable as it grows.",
+    "Frontend developer focused on turning <u class='text-black dark:text-white'>complex requirements</u> into fast, accessible interfaces at <u class='text-black dark:text-white'> enterprise scale</u>. I care about the details users never consciously notice — <u class='text-black dark:text-white'>load times, interaction states, edge cases</u> — and the architecture decisions that keep a codebase maintainable as it <u class='text-black dark:text-white'> grows</u>.",
   avatarUrl: "/me.png",
   skills: [
+    { name: "HTML5", icon: Html5 },
+    { name: "CSS3", icon: Css3 },
+    { name: "Javascript", icon: Javascript },
     { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
+    { name: "WordPress", icon: Wordpress },
+    { name: "NPM", icon: Npm },
+    { name: "Sitecore CMS", icon: Sitecore },
     { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
-    { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "GSAP", icon: Gsap },
+    { name: "Three.js", icon: ThreeJs },
+    { name: "Next.js", icon: NextjsIconDark },
+    { name: "Bootstrap", icon: Bootstrap },
+    { name: "Tailwind", icon: TailwindCss },
+    { name: "Figma", icon: Figma },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
+  gallery: [
+    { src: "/gallery/picture-1.jpg", alt: "photo-1.jpg" },
+    { src: "/gallery/picture-2.jpg", alt: "photo-2.jpg" },
+    { src: "/gallery/picture-3.jpg", alt: "photo-3.jpg" },
+    { src: "/gallery/picture-4.jpg", alt: "photo-4.jpg" },
+    { src: "/gallery/picture-5.jpg", alt: "photo-5.jpg" },
+    { src: "/gallery/picture-6.jpg", alt: "photo-6.jpg" },
+    { src: "/gallery/picture-7.jpg", alt: "photo-7.jpg" },
+    { src: "/gallery/picture-8.jpg", alt: "photo-8.jpg" },
+    { src: "/gallery/picture-9.jpg", alt: "photo-9.jpg" },
+  ] as { src?: string; alt: string }[],
   contact: {
-    email: "hello@example.com",
+    email: "tanveerh119@gmail.com",
     tel: "+123456789",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/TanveerHussain/",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/tanveer-hussain-835b8790/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:tanveerh119@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -87,7 +93,7 @@ export const DATA = {
       href: "https://www.emiratesnbd.com",
       badges: [],
       location: "Dubai, UAE",
-      title: "Frontend Developer / Software Engineer",
+      title: "Software Engineer",
       logoUrl: "/emiratesnbd.png",
       start: "June 2021",
       end: "Present",
@@ -139,127 +145,124 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Chatbot",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "This is a conversational chatbot I built from scratch — complete with a floating widget, smooth message flow, and real-time response handling. I focused a lot on the small details here: typing indicators, message alignment, and a UI that feels friendly rather than robotic.",
       technologies: [
-        "Next.js",
+        "React",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Node.js",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/TanveerHussain/chatbot",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/projects/chatbot.png",
+      video:"",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Shophub",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Shophub is an e-commerce platform I built to practice the complete shopping flow — from browsing products to cart management and login/signup. I kept the UI minimal and clutter-free so the products stay in focus, and made sure it works smoothly across screen sizes.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "React",
+        "Auth",
+        "Bootstrap",
+        "eCommerce",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/TanveerHussain/shophub",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/projects/shophub.png",
+      video:"",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Digital Business Card",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "I built this digital business card as a modern alternative to paper cards — scan one QR to save the contact instantly, or scan the other to add it straight to your phone's wallet. Focused on a clean, premium card design with cross-platform support for both iOS and Android.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "JavaScript",
+        "Vercel",
+        "Apple Wallet",
+        "Google Wallet",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          type: "Source",
+          href: "https://github.com/TanveerHussain/wallet-app",
+          icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/projects/wallet-app.png",
+      video:"",
     },
+    {
+      title: "Gemini Clone",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "I rebuilt Google Gemini as a working AI assistant — from the pixel-accurate landing page to live chat responses powered by an AI API. Beyond matching the design, it handles real prompt submission, response streaming, and conversation flow just like the original.",
+      technologies: [
+        "React",
+        "Chat",
+        "Google Gemini",
+        "API",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/TanveerHussain/gemini-clone",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/gemini.png",
+      video:"",
+    },
+    {
+      title: "Expense Tracker",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "I built this expense tracker to handle the full flow of personal finance management — user signup and login, adding and managing income/expense records, and automatic calculation of totals and monthly breakdowns. The charts are generated from real user data, so insights update as transactions change",
+      technologies: [
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "Chart.js",
+        "MongoDB",
+        "Express.js",
+        "JWT",
+      ],
+      // links: [
+      //   {
+      //     type: "Source",
+      //     href: "https://github.com/TanveerHussain/gemini-clone",
+      //     icon: <Icons.github className="size-3" />,
+      //   },
+      // ],
+      image: "/projects/expense-tracker.png",
+      video:"",
+    }
   ],
   hackathons: [
     {
