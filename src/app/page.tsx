@@ -15,6 +15,9 @@ import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
+// Temporarily hiding the hero avatar. Flip back to true to restore it.
+const SHOW_AVATAR = false;
+
 export default function Page() {
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative">
@@ -34,12 +37,14 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-28 border rounded-full shadow-lg ring-1 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
+            {SHOW_AVATAR && (
+              <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
+                <Avatar className="size-24 md:size-28 border rounded-full shadow-lg ring-1 ring-muted">
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+              </BlurFade>
+            )}
           </div>
         </div>
       </section>
